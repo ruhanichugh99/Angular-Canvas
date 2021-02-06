@@ -48,6 +48,20 @@ npm i angular-editor-fabric-js
 git clone https://github.com/kevoj/angular-editor-fabric-js.git
 cd angular-editor-fabric-js
 npm install
+
+Might have to run the following commands to get the angular:
+npm install -g @angular/cli
+npm link @angular/cli
+
+If you get the error: This version of CLI is only compatible with the Angular version xxx but angular version yyy was found instead
+
+Run:
+npm install --save -dev @angular/cli@latest (for Angular 8 or below)
+npm install --save --only=dev @angular/cli@latest (for Angular 9 and up)
+
+
+To get a list of all dependencies required to be upgraded:
+ng update 
 ```
 ## Start
 
